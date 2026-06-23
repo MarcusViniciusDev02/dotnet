@@ -1,3 +1,4 @@
+using System.Threading.Channels;
 using Cadastro;
 
 namespace Repositorio;
@@ -55,5 +56,51 @@ public class ClienteRepositorio
         {
             Console.WriteLine(cliente);
         }
+    }
+
+    public void EditarCliente()
+    {
+        Console.Clear();
+        Console.WriteLine("Informe o código do cliente: ");
+        var codigo = Console.ReadLine();
+
+        var cliente = clientes.FirstOrDefault(p => p.Id == int.Parse(codigo));
+
+        if(cliente == null)
+        {
+            Console.WriteLine("Cliente não encontrado [Enter]");
+            Console.ReadKey();
+            return;
+        }
+        //Imprime cliente achado.
+        ImprimirCliente(cliente);
+
+        Console.WriteLine("Nome do Cliente: ");
+        var nome = Console.ReadLine();
+        Console.WriteLine(Environment.NewLine);
+
+        Console.WriteLine("Data de Nascimento: ");
+        var dataNascimento = DateOnly.Parse(Console.ReadLine());
+        Console.WriteLine(Environment.NewLine);
+
+        Console.WriteLine("Desconto: ");
+        var desconto = decimal.Parse(Console.ReadLine());
+        Console.WriteLine(Environment.NewLine);
+
+        var cliente = new Cliente();
+        cliente.Id = clientes.Count + 1;
+        cliente.Nome = nome;
+        cliente.DataNascimento = dataNascimento;
+        cliente.Desconto = desconto;
+        cliente.CadastradoEm = DateTime.Now;
+        
+        //Adiciona o cliente editado a lista.
+        clientes.Add(cliente);
+
+        Console.WriteLine("Cliente alterado com sucesso [Enter]");
+
+        //Imprime cliente editado. 
+        ImprimirCliente(cliente);
+        Console.ReadKey();
     }
 }
