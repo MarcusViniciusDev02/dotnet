@@ -62,8 +62,8 @@ public class ClienteRepositorio
     {
         Console.Clear();
         Console.WriteLine("Informe o código do cliente: ");
+        //Utilizo a variavel código para poder buscar o cliente através do IP.
         var codigo = Console.ReadLine();
-
         var cliente = clientes.FirstOrDefault(p => p.Id == int.Parse(codigo));
 
         if(cliente == null)
@@ -87,7 +87,6 @@ public class ClienteRepositorio
         var desconto = decimal.Parse(Console.ReadLine());
         Console.WriteLine(Environment.NewLine);
 
-        var cliente = new Cliente();
         cliente.Id = clientes.Count + 1;
         cliente.Nome = nome;
         cliente.DataNascimento = dataNascimento;
