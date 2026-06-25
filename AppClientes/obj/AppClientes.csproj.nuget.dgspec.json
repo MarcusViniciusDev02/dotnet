@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\marcus.paixao\\Desktop\\dotnet\\AppClientes\\AppClientes.csproj": {}
+    "C:\\Users\\Candongueiro\\Desktop\\dotnet\\AppClientes\\AppClientes.csproj": {}
   },
   "projects": {
-    "C:\\Users\\marcus.paixao\\Desktop\\dotnet\\AppClientes\\AppClientes.csproj": {
+    "C:\\Users\\Candongueiro\\Desktop\\dotnet\\AppClientes\\AppClientes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marcus.paixao\\Desktop\\dotnet\\AppClientes\\AppClientes.csproj",
+        "projectUniqueName": "C:\\Users\\Candongueiro\\Desktop\\dotnet\\AppClientes\\AppClientes.csproj",
         "projectName": "AppClientes",
-        "projectPath": "C:\\Users\\marcus.paixao\\Desktop\\dotnet\\AppClientes\\AppClientes.csproj",
-        "packagesPath": "C:\\Users\\marcus.paixao\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marcus.paixao\\Desktop\\dotnet\\AppClientes\\obj\\",
+        "projectPath": "C:\\Users\\Candongueiro\\Desktop\\dotnet\\AppClientes\\AppClientes.csproj",
+        "packagesPath": "C:\\Users\\Candongueiro\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Candongueiro\\Desktop\\dotnet\\AppClientes\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\marcus.paixao\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Candongueiro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

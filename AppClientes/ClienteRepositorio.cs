@@ -45,7 +45,7 @@ public class ClienteRepositorio
         Nome:.........................{cliente.Nome}
         Data de Nascimento: {cliente.DataNascimento}
         Cadastro:.............{cliente.CadastradoEm}
-        Desconto:.................{cliente.Desconto}
+        Desconto:.................{cliente.Desconto.ToString("0.00")}
         """);
     }
 
@@ -54,8 +54,9 @@ public class ClienteRepositorio
     {
         foreach (var cliente in clientes)
         {
-            Console.WriteLine(cliente);
+            ImprimirCliente(cliente);
         }
+        Console.ReadKey();
     }
 
     public void EditarCliente()
@@ -100,6 +101,30 @@ public class ClienteRepositorio
 
         //Imprime cliente editado. 
         ImprimirCliente(cliente);
+        Console.ReadKey();
+    }
+
+    public void ExcluirCliente()
+    {
+        Console.Clear();
+
+        Console.WriteLine("Informe o código do cliente: ");
+
+        var codigo = Console.ReadLine();
+        var cliente = clientes.FirstOrDefault(p => p.Id == int.Parse(codigo));
+
+        if (cliente == null)
+        {
+            Console.WriteLine("Cliente não encontrado [Enter]");
+            Console.ReadKey();
+            return;
+        }
+        //Imprime cliente achado.
+        ImprimirCliente(cliente);
+
+        clientes.Remove(cliente);
+
+        Console.WriteLine("Cliente excluido com sucesso [Enter]");
         Console.ReadKey();
     }
 }
