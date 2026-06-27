@@ -8,6 +8,32 @@ public class ClienteRepositorio
     //Lista baseada na classe dos clientes. 
     public List<Cliente> clientes = new List<Cliente>();
 
+    public void GravarDadosCliente()
+    {
+
+        //Transforma a os dados da lista em um formato json
+        var json = System.Text.Json.JsonSerializer.Serialize(clientes);
+
+        //Vai passar todo o arquivo para o formato Json.
+        File.WriteAllText("clientes.txt", json);
+
+    }
+
+    public void LerDadosClientes()
+    {
+        if (File.Exists("clientes.txt"))
+        {
+            //Lê os dados vindo do arquivo.
+            var dados = File.ReadAllText("clientes.txt");
+
+            //Vai transformar a string do json e transformar em objetos armazenados na lista.
+            var clientesArquivo = System.Text.Json.JsonSerializer.Deserialize<List<Cliente>>(dados);
+
+            //Pega uma coleção e adiciona a outra coleção.
+            clientes.AddRange(clientesArquivo);
+        }
+    }
+
     //Método criado para cadastrar clientes através de um input.
     public void CadastrarCliente()
     {
@@ -41,11 +67,12 @@ public class ClienteRepositorio
     public void ImprimirCliente(Cliente cliente)
     {
         Console.WriteLine($"""
-        Id:.............................{cliente.Id}
-        Nome:.........................{cliente.Nome}
+        Id: {cliente.Id}
+        Nome: {cliente.Nome}
         Data de Nascimento: {cliente.DataNascimento}
-        Cadastro:.............{cliente.CadastradoEm}
-        Desconto:.................{cliente.Desconto.ToString("0.00")}
+        Cadastro: {cliente.CadastradoEm}
+        Desconto: {cliente.Desconto.ToString("0.00")}
+        ----------------------------
         """);
     }
 

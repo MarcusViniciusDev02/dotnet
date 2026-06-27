@@ -5,9 +5,10 @@ namespace AppClientes;
 
 class Program
 {
-    static ClienteRepositorio clienteRepositorio = new ClienteRepositorio();
+    static ClienteRepositorio _clienteRepositorio = new ClienteRepositorio();
     static void Main(string[] args)
     {
+        _clienteRepositorio.LerDadosClientes();
         while (true)
         {
             Menu();
@@ -37,22 +38,23 @@ class Program
         switch (int.Parse(opcao))
         {
             case 1: 
-            clienteRepositorio.CadastrarCliente();
+            _clienteRepositorio.CadastrarCliente();
             Menu();
             break;
             case 2:
-            clienteRepositorio.ExibirClientes();
+            _clienteRepositorio.ExibirClientes();
             Menu();
             break;
             case 3: 
-            clienteRepositorio.EditarCliente();
+            _clienteRepositorio.EditarCliente();
             Menu();
             break;
             case 4:
-            clienteRepositorio.ExcluirCliente();
+            _clienteRepositorio.ExcluirCliente();
             Menu();
             break;
             case 5:
+            _clienteRepositorio.GravarDadosCliente();
             Environment.Exit(0);
             break;
             default:

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Candongueiro\\Desktop\\dotnet\\AppClientes\\AppClientes.csproj": {}
+    "C:\\Users\\Marcus\\Desktop\\dotnet\\AppClientes\\AppClientes.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Candongueiro\\Desktop\\dotnet\\AppClientes\\AppClientes.csproj": {
+    "C:\\Users\\Marcus\\Desktop\\dotnet\\AppClientes\\AppClientes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Candongueiro\\Desktop\\dotnet\\AppClientes\\AppClientes.csproj",
+        "projectUniqueName": "C:\\Users\\Marcus\\Desktop\\dotnet\\AppClientes\\AppClientes.csproj",
         "projectName": "AppClientes",
-        "projectPath": "C:\\Users\\Candongueiro\\Desktop\\dotnet\\AppClientes\\AppClientes.csproj",
-        "packagesPath": "C:\\Users\\Candongueiro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Candongueiro\\Desktop\\dotnet\\AppClientes\\obj\\",
+        "projectPath": "C:\\Users\\Marcus\\Desktop\\dotnet\\AppClientes\\AppClientes.csproj",
+        "packagesPath": "C:\\Users\\Marcus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Marcus\\Desktop\\dotnet\\AppClientes\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Candongueiro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Marcus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -30,7 +30,6 @@
         },
         "frameworks": {
           "net10.0": {
-            "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {}
           }
@@ -45,11 +44,10 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.300"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net10.0": {
-          "framework": "net10.0",
           "targetAlias": "net10.0",
           "imports": [
             "net461",
@@ -67,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.301/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.204/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",

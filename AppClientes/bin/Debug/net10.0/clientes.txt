@@ -1,0 +1,1 @@
+[{"Id":1,"Nome":"Marcus Vinicius Paix\u00E3o do Nascimento","DataNascimento":"1995-01-02","CadastradoEm":"2026-06-27T15:52:10.2380474-03:00","Desconto":10},{"Id":2,"Nome":"Marcus Vinicius Paixao do Nascimento","DataNascimento":"1995-01-02","CadastradoEm":"2026-06-27T16:01:53.8937987-03:00","Desconto":10}]
